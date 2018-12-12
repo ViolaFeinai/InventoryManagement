@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/audiphonotitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:text="Audiphono Name"
+        android:textSize="25dp" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/audiphonotype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Audiphono Type"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/pic"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:text = "Android Linear Layout Example | Java Tutorial Network
+https://javatutorial.net/android-linear-layout-examplevvvvvvvvvvvvvvv"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/audiphonodetails"
+        android:textSize = "18dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        android:paddingBottom="45dp"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Quantity : 20"
+        android:textSize="20dp"
+        android:paddingBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+
+        <TextView
+            android:id="@+id/locationname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Location"
+            android:textSize="25dp"
+            android:paddingRight="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="updateproduct"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Change Location >"
+        android:textColor="#FFF2F9"
+        android:textSize="15dp"
+        android:background="@drawable/buttonshape"/>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/audiphonodetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Here there will be displayed all the history actions of all the users and other useful information, for example:
+
+
+22/8/2018
+user Kirill Panduro inserted " />
+
+        </ScrollView>
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="match_parent"
+        android:layout_height= "2dp"
+        android:background="#eeeeee"
+        android:layout_above="@+id/bottom_panel" />
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:paddingTop="5dp"
+            android:onClick="mainMenu"/>
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/scan"
+            android:paddingTop="5dp"
+            android:onClick="scanProduct"/>
+
+        <ImageView
+            android:id="@+id/products"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/products"
+            android:paddingTop="5dp"
+            android:onClick="showProducts" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/location"
+            android:paddingTop="5dp"
+            android:onClick="showLocations"/>
+
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:src="@drawable/settings"
+            android:paddingTop="5dp"
+            android:onClick="settings"/>
+    </LinearLayout>
+
+</RelativeLayout>

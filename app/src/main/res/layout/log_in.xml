@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+xmlns:tools = "http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height = "match_parent"
+android:layout_marginTop = "100dp"
+android:layout_marginBottom= "100dp"
+android:layout_marginLeft = "40dp"
+android:layout_marginRight= "40dp"
+tools:context = ".MainActivity">
+
+<TextView android:text = "Log in" android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_height = "wrap_content"
+    android:id = "@+id/textview"
+    android:textSize = "35dp"
+    android:layout_alignParentTop = "true"
+    android:layout_centerHorizontal = "true" />
+
+
+<EditText
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:id = "@+id/editTextEmail"
+    android:hint = "Email"
+    android:focusable = "true"
+    android:textColorHighlight = "#0a3179"
+    android:textColorHint = "#2a5bbd"
+    android:layout_marginTop = "100dp"
+    android:layout_alignParentLeft = "true"
+    android:layout_alignParentStart = "true"
+    android:layout_alignParentRight = "true"
+    android:layout_alignParentEnd = "true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editTextPassword"
+    android:layout_below="@+id/editTextEmail"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/editTextEmail"
+    android:layout_alignEnd="@+id/editTextEmail"
+    android:textColorHint="#2a5bbd"
+    android:hint="Password" />
+
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Log in"
+    android:id="@+id/button"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/editTextPassword"
+    android:onClick="loginuser"/>
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="Sign Up"
+    android:id="@+id/button2"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/editTextPassword"
+    android:onClick="signupuser"/>
+
+<TextView
+    android:text = "Forgot Password?"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_height = "wrap_content"
+    android:id = "@+id/textview1"
+    android:textSize = "15dp"
+    android:layout_below="@+id/button2"
+    android:autoLink="web"
+    android:linksClickable="true" />
+
+</RelativeLayout>
